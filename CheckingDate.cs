@@ -58,20 +58,20 @@ namespace Project1ListaPrzebojów
                             InfoBox1.Text += $"Id piosenki:{item.IdUtworu}\r\nNazwa utworu: {item.NazwaUtworu}\r\nRok Wydania: {item.RokWykonania}\r\nOpis Utworu: { item.OpisUtworu}\r\nDługość: {item.Długość}\r\nWykonawca: {item.Wykonawca.Wykonawca}.\r\n\r\n";
                             foreach (var item2 in INFO2)
                             {
-                                InfoBox2.Text += $"Id piosenki:{item.IdUtworu}\r\nNazwa gatunku: {item2.NazwaGatunku}\r\nRok powstania: {item2.RokPowstania}\r\nMiejsce Powstania: {item2.MiejscePowstania}\r\n\r\n";
+                                InfoBox2.Text += $"Id piosenki:{item.IdUtworu}\r\nId Gatunku: {item2.IdGatunku}\r\nNazwa gatunku: {item2.NazwaGatunku}\r\nRok powstania: {item2.RokPowstania}\r\nMiejsce Powstania: {item2.MiejscePowstania}\r\n\r\n";
                             }
 
                             foreach (var item2 in INFO3)
                             {
-                                InfoBox3.Text += $"Id piosenki:{item.IdUtworu}\r\nNazwa nagrody: {item2.NazwaNagrody}\r\nKategoria: {item2.Kategoria}\r\nPierwszy rok wręczenia: {item2.RokWreczeniaPierwszejNagrody}\r\n\r\n";
+                                InfoBox3.Text += $"Id piosenki:{item.IdUtworu}\r\nId Nagrody: {item2.IdNagrody}\r\nNazwa nagrody: {item2.NazwaNagrody}\r\nKategoria: {item2.Kategoria}\r\nPierwszy rok wręczenia: {item2.RokWreczeniaPierwszejNagrody}\r\n\r\n";
                             }
                             InfoBox4.Text += $"Id piosenki:{item.IdUtworu}\r\nOcena Administratora: {INFO4.OcenaAdministratora}\r\nOcena Administratorki: {INFO4.OcenaAdministratorki}\r\n\r\n";
 
 
-                            InfoBox5.Text += $"Id piosenki:{item.IdUtworu}\r\nWykonawca: {INFO5.Wykonawca}\r\nPoczątek wykonawcy: {INFO5.RokPowstania}\r\n\r\n";
+                            InfoBox5.Text += $"Id piosenki:{item.IdUtworu}\r\nId Wykonawcy: {INFO5.IdWykonawcy}\r\nWykonawca: {INFO5.Wykonawca}\r\nPoczątek wykonawcy: {INFO5.RokPowstania}\r\n\r\n";
 
 
-                            InfoBox6.Text += $"Id piosenki:{item.IdUtworu}\r\nNazwa albumu: {INFO6.NazwaAlbumu}\r\nRok wydania: {INFO6.RokWydania}\r\nRok rozpoczecie nagrań: {INFO6.RokRozpoczecieNagrań}\r\nWydawnictwo:{INFO6.Wydawnictwo}\r\n\r\n";
+                            InfoBox6.Text += $"Id piosenki:{item.IdUtworu}\r\nId Albumu: {INFO6.IdAlbumu}\r\nNazwa albumu: {INFO6.NazwaAlbumu}\r\nRok wydania: {INFO6.RokWydania}\r\nRok rozpoczecie nagrań: {INFO6.RokRozpoczecieNagrań}\r\nWydawnictwo:{INFO6.Wydawnictwo}\r\n\r\n";
 
                         }
                         //var INFO2 = INFO.SelectMany(x => x.Gatunki);
@@ -143,9 +143,20 @@ namespace Project1ListaPrzebojów
 
                         }
                     }
+                    InfoBox1.Visible = true;
+                    InfoBox2.Visible = true;
+                    InfoBox3.Visible = true;
+                    InfoBox4.Visible = true;
+                    InfoBox5.Visible = true;
+                    InfoBox6.Visible = true;
                 }
             }
            
+        }
+
+        private void InfoBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,24 +31,24 @@ namespace Project1ListaPrzebojów
                 {
                     var utwory = new Tracks();
                     utwory.NazwaUtworu = "Example";
-                    utwory.Długość = "3:30";
+                    utwory.Długość = "03:30";
                     utwory.RokWykonania = 2008;
                     //utwory.AlbumId = 1;
 
 
                     var wykonawca = new Performers();
-                    wykonawca.Wykonawca = "Wykonawca1";
+                    wykonawca.Wykonawca = "Brak ustawionego wykonawcy";
                     var grade = new Grades();
                     grade.OcenaAdministratora = 10;
                     var genere = new Geners();
-                    genere.NazwaGatunku = "Gatunek1";
+                    genere.NazwaGatunku = "Brak ustawionego gatunku";
                     var album = new Albums();
-                    album.NazwaAlbumu = "album1";
-                    album.RokWydania = 2009;
+                    album.NazwaAlbumu = "Brak ustawionego albumu";
+                    album.RokWydania = 0;
                     var awards = new Awards();
-                    awards.NazwaNagrody = "Przykładowa";
-                    awards.Kategoria = "Kategoria przykładowa";
-                    awards.RokWreczeniaPierwszejNagrody = 2000;
+                    awards.NazwaNagrody = "Nie otrzymał żadnej nagrody";
+                    awards.Kategoria = "";
+                    awards.RokWreczeniaPierwszejNagrody = 0;
 
                     utwory.Gatunki.Add(genere);
                     utwory.Nagrody.Add(awards);

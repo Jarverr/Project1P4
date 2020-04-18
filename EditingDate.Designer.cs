@@ -32,22 +32,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.GradeAdm = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.EditMeTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.GradeAdm2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.PerfId = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.DuratTrack = new System.Windows.Forms.TextBox();
             this.DescTrack = new System.Windows.Forms.TextBox();
-            this.CreationYear = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -56,19 +51,26 @@
             this.button1 = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.CreationYear = new System.Windows.Forms.MaskedTextBox();
+            this.GradeAdm = new System.Windows.Forms.MaskedTextBox();
+            this.GradeAdm2 = new System.Windows.Forms.MaskedTextBox();
+            this.DuratTrack = new System.Windows.Forms.MaskedTextBox();
+            this.textBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox19 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox18 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox17 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox16 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox12 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox11 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox9 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox8 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox7 = new System.Windows.Forms.MaskedTextBox();
+            this.PerfId = new System.Windows.Forms.MaskedTextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -88,34 +90,34 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.PerfId);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.textBox8);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox11);
             this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.textBox16);
             this.groupBox1.Controls.Add(this.textBox17);
             this.groupBox1.Controls.Add(this.textBox18);
             this.groupBox1.Controls.Add(this.textBox19);
-            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.DuratTrack);
+            this.groupBox1.Controls.Add(this.GradeAdm2);
             this.groupBox1.Controls.Add(this.GradeAdm);
+            this.groupBox1.Controls.Add(this.CreationYear);
+            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.EditMeTextBox);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.GradeAdm2);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.PerfId);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.DuratTrack);
             this.groupBox1.Controls.Add(this.DescTrack);
-            this.groupBox1.Controls.Add(this.CreationYear);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.label10);
@@ -137,15 +139,6 @@
             this.label13.Size = new System.Drawing.Size(345, 17);
             this.label13.TabIndex = 51;
             this.label13.Text = "*Album, nagrodę, gatunek aby uzupełnic wpisz liczbę.";
-            // 
-            // GradeAdm
-            // 
-            this.GradeAdm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GradeAdm.Location = new System.Drawing.Point(589, 58);
-            this.GradeAdm.Name = "GradeAdm";
-            this.GradeAdm.Size = new System.Drawing.Size(152, 22);
-            this.GradeAdm.TabIndex = 50;
             // 
             // label6
             // 
@@ -199,15 +192,6 @@
             this.label11.TabIndex = 41;
             this.label11.Text = "Id utworu do edycji:";
             // 
-            // GradeAdm2
-            // 
-            this.GradeAdm2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GradeAdm2.Location = new System.Drawing.Point(589, 109);
-            this.GradeAdm2.Name = "GradeAdm2";
-            this.GradeAdm2.Size = new System.Drawing.Size(152, 22);
-            this.GradeAdm2.TabIndex = 40;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -216,13 +200,6 @@
             this.label2.Size = new System.Drawing.Size(102, 17);
             this.label2.TabIndex = 23;
             this.label2.Text = "Nazwa Utworu:";
-            // 
-            // PerfId
-            // 
-            this.PerfId.Location = new System.Drawing.Point(203, 324);
-            this.PerfId.Name = "PerfId";
-            this.PerfId.Size = new System.Drawing.Size(292, 22);
-            this.PerfId.TabIndex = 39;
             // 
             // label3
             // 
@@ -251,13 +228,6 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Długość Utworu:";
             // 
-            // DuratTrack
-            // 
-            this.DuratTrack.Location = new System.Drawing.Point(203, 214);
-            this.DuratTrack.Name = "DuratTrack";
-            this.DuratTrack.Size = new System.Drawing.Size(292, 22);
-            this.DuratTrack.TabIndex = 35;
-            // 
             // DescTrack
             // 
             this.DescTrack.Location = new System.Drawing.Point(204, 114);
@@ -266,13 +236,6 @@
             this.DescTrack.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DescTrack.Size = new System.Drawing.Size(292, 94);
             this.DescTrack.TabIndex = 34;
-            // 
-            // CreationYear
-            // 
-            this.CreationYear.Location = new System.Drawing.Point(203, 86);
-            this.CreationYear.Name = "CreationYear";
-            this.CreationYear.Size = new System.Drawing.Size(292, 22);
-            this.CreationYear.TabIndex = 33;
             // 
             // label9
             // 
@@ -344,82 +307,153 @@
             this.label14.Text = "Success";
             this.label14.Visible = false;
             // 
-            // textBox6
+            // CreationYear
             // 
-            this.textBox6.Location = new System.Drawing.Point(638, 268);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(103, 22);
-            this.textBox6.TabIndex = 56;
+            this.CreationYear.Location = new System.Drawing.Point(202, 84);
+            this.CreationYear.Mask = "0000";
+            this.CreationYear.Name = "CreationYear";
+            this.CreationYear.Size = new System.Drawing.Size(43, 22);
+            this.CreationYear.TabIndex = 37;
+            this.CreationYear.ValidatingType = typeof(int);
             // 
-            // textBox16
+            // GradeAdm
             // 
-            this.textBox16.Location = new System.Drawing.Point(529, 268);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(103, 22);
-            this.textBox16.TabIndex = 55;
+            this.GradeAdm.Location = new System.Drawing.Point(589, 58);
+            this.GradeAdm.Mask = "00";
+            this.GradeAdm.Name = "GradeAdm";
+            this.GradeAdm.Size = new System.Drawing.Size(43, 22);
+            this.GradeAdm.TabIndex = 67;
+            this.GradeAdm.ValidatingType = typeof(int);
             // 
-            // textBox17
+            // GradeAdm2
             // 
-            this.textBox17.Location = new System.Drawing.Point(420, 268);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(103, 22);
-            this.textBox17.TabIndex = 54;
+            this.GradeAdm2.Location = new System.Drawing.Point(589, 109);
+            this.GradeAdm2.Mask = "00";
+            this.GradeAdm2.Name = "GradeAdm2";
+            this.GradeAdm2.Size = new System.Drawing.Size(43, 22);
+            this.GradeAdm2.TabIndex = 68;
+            this.GradeAdm2.ValidatingType = typeof(int);
             // 
-            // textBox18
+            // DuratTrack
             // 
-            this.textBox18.Location = new System.Drawing.Point(311, 268);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(103, 22);
-            this.textBox18.TabIndex = 53;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(202, 268);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(103, 22);
-            this.textBox19.TabIndex = 52;
+            this.DuratTrack.Location = new System.Drawing.Point(202, 216);
+            this.DuratTrack.Mask = "00:00";
+            this.DuratTrack.Name = "DuratTrack";
+            this.DuratTrack.Size = new System.Drawing.Size(43, 22);
+            this.DuratTrack.TabIndex = 69;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(202, 242);
+            this.textBox5.Location = new System.Drawing.Point(202, 243);
+            this.textBox5.Mask = "0000";
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(292, 22);
-            this.textBox5.TabIndex = 57;
+            this.textBox5.Size = new System.Drawing.Size(43, 22);
+            this.textBox5.TabIndex = 70;
+            this.textBox5.ValidatingType = typeof(int);
+            this.textBox5.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.textBox5_MaskInputRejected);
             // 
-            // textBox7
+            // textBox19
             // 
-            this.textBox7.Location = new System.Drawing.Point(638, 296);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(103, 22);
-            this.textBox7.TabIndex = 66;
+            this.textBox19.Location = new System.Drawing.Point(202, 271);
+            this.textBox19.Mask = "0000";
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(52, 22);
+            this.textBox19.TabIndex = 71;
+            this.textBox19.ValidatingType = typeof(int);
             // 
-            // textBox8
+            // textBox18
             // 
-            this.textBox8.Location = new System.Drawing.Point(529, 296);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(103, 22);
-            this.textBox8.TabIndex = 65;
+            this.textBox18.Location = new System.Drawing.Point(260, 271);
+            this.textBox18.Mask = "0000";
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(52, 22);
+            this.textBox18.TabIndex = 72;
+            this.textBox18.ValidatingType = typeof(int);
             // 
-            // textBox9
+            // textBox17
             // 
-            this.textBox9.Location = new System.Drawing.Point(420, 296);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(103, 22);
-            this.textBox9.TabIndex = 64;
+            this.textBox17.Location = new System.Drawing.Point(318, 271);
+            this.textBox17.Mask = "0000";
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(52, 22);
+            this.textBox17.TabIndex = 73;
+            this.textBox17.ValidatingType = typeof(int);
             // 
-            // textBox11
+            // textBox16
             // 
-            this.textBox11.Location = new System.Drawing.Point(311, 296);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(103, 22);
-            this.textBox11.TabIndex = 63;
+            this.textBox16.Location = new System.Drawing.Point(376, 271);
+            this.textBox16.Mask = "0000";
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(52, 22);
+            this.textBox16.TabIndex = 74;
+            this.textBox16.ValidatingType = typeof(int);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(434, 271);
+            this.textBox6.Mask = "0000";
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(62, 22);
+            this.textBox6.TabIndex = 75;
+            this.textBox6.ValidatingType = typeof(int);
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(202, 296);
+            this.textBox12.Location = new System.Drawing.Point(202, 299);
+            this.textBox12.Mask = "0000";
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(103, 22);
-            this.textBox12.TabIndex = 62;
+            this.textBox12.Size = new System.Drawing.Size(52, 22);
+            this.textBox12.TabIndex = 76;
+            this.textBox12.ValidatingType = typeof(int);
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(260, 299);
+            this.textBox11.Mask = "0000";
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(52, 22);
+            this.textBox11.TabIndex = 77;
+            this.textBox11.ValidatingType = typeof(int);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(318, 299);
+            this.textBox9.Mask = "0000";
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(52, 22);
+            this.textBox9.TabIndex = 78;
+            this.textBox9.ValidatingType = typeof(int);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(376, 299);
+            this.textBox8.Mask = "0000";
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(52, 22);
+            this.textBox8.TabIndex = 79;
+            this.textBox8.ValidatingType = typeof(int);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(434, 299);
+            this.textBox7.Mask = "0000";
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(62, 22);
+            this.textBox7.TabIndex = 80;
+            this.textBox7.ValidatingType = typeof(int);
+            // 
+            // PerfId
+            // 
+            this.PerfId.Location = new System.Drawing.Point(202, 327);
+            this.PerfId.Mask = "0000";
+            this.PerfId.Name = "PerfId";
+            this.PerfId.Size = new System.Drawing.Size(52, 22);
+            this.PerfId.TabIndex = 81;
+            this.PerfId.ValidatingType = typeof(int);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // EditingDate
             // 
@@ -436,6 +470,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,22 +482,17 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox NameTrack;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox GradeAdm2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox PerfId;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox DuratTrack;
         private System.Windows.Forms.TextBox DescTrack;
-        private System.Windows.Forms.TextBox CreationYear;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox EditMeTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox GradeAdm;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -470,16 +500,22 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.MaskedTextBox CreationYear;
+        private System.Windows.Forms.MaskedTextBox GradeAdm;
+        private System.Windows.Forms.MaskedTextBox GradeAdm2;
+        private System.Windows.Forms.MaskedTextBox DuratTrack;
+        private System.Windows.Forms.MaskedTextBox textBox5;
+        private System.Windows.Forms.MaskedTextBox textBox19;
+        private System.Windows.Forms.MaskedTextBox textBox7;
+        private System.Windows.Forms.MaskedTextBox textBox8;
+        private System.Windows.Forms.MaskedTextBox textBox9;
+        private System.Windows.Forms.MaskedTextBox textBox11;
+        private System.Windows.Forms.MaskedTextBox textBox12;
+        private System.Windows.Forms.MaskedTextBox textBox6;
+        private System.Windows.Forms.MaskedTextBox textBox16;
+        private System.Windows.Forms.MaskedTextBox textBox17;
+        private System.Windows.Forms.MaskedTextBox textBox18;
+        private System.Windows.Forms.MaskedTextBox PerfId;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

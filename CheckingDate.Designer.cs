@@ -39,8 +39,20 @@
             this.InfoBox2 = new System.Windows.Forms.TextBox();
             this.InfoBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -83,12 +95,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.InfoBox6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.InfoBox5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.InfoBox4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.InfoBox3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.InfoBox2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.InfoBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox6, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox5, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 85);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -99,79 +111,74 @@
             // 
             // InfoBox6
             // 
-            this.InfoBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.InfoBox6.Location = new System.Drawing.Point(407, 198);
+            this.InfoBox6.Location = new System.Drawing.Point(0, 21);
             this.InfoBox6.Multiline = true;
             this.InfoBox6.Name = "InfoBox6";
             this.InfoBox6.ReadOnly = true;
             this.InfoBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoBox6.Size = new System.Drawing.Size(198, 190);
+            this.InfoBox6.Size = new System.Drawing.Size(198, 169);
             this.InfoBox6.TabIndex = 5;
             this.InfoBox6.Visible = false;
+            this.InfoBox6.TextChanged += new System.EventHandler(this.InfoBox6_TextChanged);
             // 
             // InfoBox5
             // 
-            this.InfoBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.InfoBox5.Location = new System.Drawing.Point(205, 198);
+            this.InfoBox5.Location = new System.Drawing.Point(0, 21);
             this.InfoBox5.Multiline = true;
             this.InfoBox5.Name = "InfoBox5";
             this.InfoBox5.ReadOnly = true;
             this.InfoBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoBox5.Size = new System.Drawing.Size(196, 190);
+            this.InfoBox5.Size = new System.Drawing.Size(196, 172);
             this.InfoBox5.TabIndex = 4;
             this.InfoBox5.Visible = false;
             // 
             // InfoBox4
             // 
-            this.InfoBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.InfoBox4.Location = new System.Drawing.Point(3, 198);
+            this.InfoBox4.Location = new System.Drawing.Point(3, 21);
             this.InfoBox4.Multiline = true;
             this.InfoBox4.Name = "InfoBox4";
             this.InfoBox4.ReadOnly = true;
             this.InfoBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoBox4.Size = new System.Drawing.Size(196, 190);
+            this.InfoBox4.Size = new System.Drawing.Size(187, 172);
             this.InfoBox4.TabIndex = 3;
             this.InfoBox4.Visible = false;
             // 
             // InfoBox3
             // 
-            this.InfoBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.InfoBox3.Location = new System.Drawing.Point(407, 3);
+            this.InfoBox3.Location = new System.Drawing.Point(0, 21);
             this.InfoBox3.Multiline = true;
             this.InfoBox3.Name = "InfoBox3";
             this.InfoBox3.ReadOnly = true;
             this.InfoBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoBox3.Size = new System.Drawing.Size(198, 189);
+            this.InfoBox3.Size = new System.Drawing.Size(198, 168);
             this.InfoBox3.TabIndex = 2;
             this.InfoBox3.Visible = false;
             // 
             // InfoBox2
             // 
-            this.InfoBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.InfoBox2.Location = new System.Drawing.Point(205, 3);
+            this.InfoBox2.Location = new System.Drawing.Point(0, 21);
             this.InfoBox2.Multiline = true;
             this.InfoBox2.Name = "InfoBox2";
             this.InfoBox2.ReadOnly = true;
             this.InfoBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoBox2.Size = new System.Drawing.Size(196, 189);
+            this.InfoBox2.Size = new System.Drawing.Size(196, 168);
             this.InfoBox2.TabIndex = 1;
             this.InfoBox2.Visible = false;
             // 
             // InfoBox1
             // 
-            this.InfoBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.InfoBox1.Location = new System.Drawing.Point(3, 3);
+            this.InfoBox1.Location = new System.Drawing.Point(3, 21);
             this.InfoBox1.Multiline = true;
             this.InfoBox1.Name = "InfoBox1";
             this.InfoBox1.ReadOnly = true;
             this.InfoBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoBox1.Size = new System.Drawing.Size(196, 189);
+            this.InfoBox1.Size = new System.Drawing.Size(187, 168);
             this.InfoBox1.TabIndex = 0;
             this.InfoBox1.Visible = false;
             // 
@@ -186,6 +193,72 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.InfoBox1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(196, 189);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Utwór:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.InfoBox2);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(205, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(196, 189);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gatunki utworu:";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.InfoBox3);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Location = new System.Drawing.Point(407, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(198, 189);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Nagrody utworu:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.InfoBox4);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(3, 198);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(196, 190);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Ocena utworu:";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.InfoBox5);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox5.Location = new System.Drawing.Point(205, 198);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(196, 190);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Wykonawca utworu:";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.InfoBox6);
+            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox6.Location = new System.Drawing.Point(407, 198);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(198, 190);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Album utworu:";
             // 
             // CheckingDate
             // 
@@ -203,8 +276,19 @@
             this.Name = "CheckingDate";
             this.Text = "Twoja Lista Przebojów";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +307,11 @@
         private System.Windows.Forms.TextBox InfoBox4;
         private System.Windows.Forms.TextBox InfoBox3;
         private System.Windows.Forms.TextBox InfoBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
     }
 }
